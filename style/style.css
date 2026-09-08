@@ -90,7 +90,9 @@ main {
     padding: 24px 32px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 24px;
+    margin: 0 auto;
 
     img{
         width: 286px;
