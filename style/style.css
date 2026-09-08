@@ -1,0 +1,116 @@
+@import url('global.css');
+
+header {
+    background-color: var(--surface-color);
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 32px;
+
+    div {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+
+        img {
+            width: 32px;
+        }
+
+        p {
+            font: var(--paragraph-md);
+            color: var(--text-color-secondary);
+        }
+
+        img:last-child {
+            width: 40px;
+        }
+    }
+}
+
+header > div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+
+    p{
+        font: var(--paragraph-sm);
+        color: var(--text-color-secondary);
+    }
+
+    h1{
+        font: var(--heading1);
+        color: var(--text-color-primary);
+    }
+
+    article:first-child{
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        section:first-child{
+            img{
+                width: 176px;
+            }
+        }
+        section:last-child{
+            display: flex;
+            flex-direction: column;
+            width: 384px;
+            gap: 8px;
+        }
+    }
+    article:last-child{
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        div{
+            padding: 0;
+            display:flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 8px;
+            img{
+                width: 24px;
+            }
+        }
+    }
+}
+
+
+
+main {
+    background-color: var(--background-color);
+    padding: 24px 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    img{
+        width: 286px;
+        height: 286px;
+        object-fit: cover;
+    }
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 32px;
+    p{
+        font: var(--paragraph-sm);
+        color: var(--text-color-secondary);
+    }
+    div:last-child{
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+}
